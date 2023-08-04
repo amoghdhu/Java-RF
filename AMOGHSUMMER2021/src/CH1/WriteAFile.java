@@ -1,0 +1,14 @@
+package CH1;
+import java.io.*;
+
+public class WriteAFile {
+    public static void main(String[] args) {
+        try {
+            FileWriter writer = new FileWriter("Foo.txt.rtf");
+            writer.write("new test");
+            writer.close();
+        } catch (IOException ex){
+            ex.printStackTrace();
+        }
+    }
+}
